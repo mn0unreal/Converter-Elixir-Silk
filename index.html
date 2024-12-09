@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir & Silk Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Converter Elixir & Silk </h1>
+        <input type="number" id="elixirAmount" placeholder="elixir amount (e.g., 18)">
+        <input type="number" id="silkAmount" placeholder="silk amount (e.g., 100)">
+        <input type="number" id="amountToConvert" placeholder="amount to convert">
+        <select id="conversionDirection">
+            <option value="elixirToSilk">Elixir to Silk</option>
+            <option value="silkToElixir">Silk to Elixir</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+        <button onclick="clearFields()">Clear</button>
+        <p id="result"></p>
+        <p id="error" style="color: red;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
